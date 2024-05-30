@@ -1,3 +1,4 @@
+//Evelyn Guachamin
 public class Genealogia {
     public String parentesco;
     public String fecha_nac;
@@ -14,7 +15,7 @@ public class Genealogia {
         System.out.println("Teléfono: "+telefono);
     }
 }
-
+//Jonathan Ramirez
 class Linaje_1 extends Genealogia{
 
     public int cedula;
@@ -34,8 +35,8 @@ class Linaje_1 extends Genealogia{
         System.out.println("El nombre es: "+nombre);
         System.out.println("El apellido es: "+apellido);
         super.imprimir_datos();
-
-        class Linaje2 extends Linaje_1{
+//Ariel Ashqui
+    class Linaje2 extends Linaje_1{
 
     public int edad;
     public String direccion;
