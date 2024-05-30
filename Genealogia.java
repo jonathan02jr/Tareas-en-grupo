@@ -34,5 +34,25 @@ class Linaje_1 extends Genealogia{
         System.out.println("El nombre es: "+nombre);
         System.out.println("El apellido es: "+apellido);
         super.imprimir_datos();
+
+        class Linaje2 extends Linaje_1{
+
+    public int edad;
+    public String direccion;
+
+    public Linaje2 ( String parentesco, String fecha_nac,int cedula,
+                     int telefono,String nombre, String apellido, int edad, String direccion ){
+        super(parentesco, fecha_nac, cedula, telefono, nombre, apellido);
+        this.edad=edad;
+        this.direccion=direccion;
+
+    }
+    public void informacion(){
+        System.out.println("La informacion es: ");
+        super.informacion_completa();
+        System.out.println("La edad es: "+edad);
+        System.out.println("La direcccion es: "+direccion);
+    }
+}
     }
 }
