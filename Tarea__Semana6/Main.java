@@ -1,7 +1,5 @@
 package Tarea__Semana6;
 
-//Fecha tarea: 05/06/2024
-
 public class Main {
     public static void main(String[] args){
 

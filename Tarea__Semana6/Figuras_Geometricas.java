@@ -1,5 +1,6 @@
 package Tarea__Semana6;
 
+//hola
 public class Figuras_Geometricas {
     public int nLados;
     public String nombre;
