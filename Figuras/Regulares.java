@@ -1,13 +1,10 @@
 package Figuras;
 
-class Regulares extends DosD {
-
-    public Regulares(int nLados,String nombre, double area, double perimetro){
-        super(nLados, nombre, area, perimetro);
+public class Regulares extends DosD {
+    public Regulares() {
     }
 
-    @Override
-    public void mostrar_datos() {
-        super.mostrar_datos();
+    public Regulares(int nLados, String nombre) {
+        super(nLados, nombre);
     }
 }
