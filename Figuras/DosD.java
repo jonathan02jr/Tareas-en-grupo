@@ -9,11 +9,15 @@ class DosD extends Figuras_Geometricas{
         this.area = area;
         this.perimetro = perimetro;
     }
-
-    /*public double calcular_area(double){
-        return calcular_area();
+    public Double calcular_area(){
+        return null;
     }
-    public double calcular_perimetro(double){
-        return calcular_perimetro();
-    }*/
+    public Double calcular_perimetro(){
+        return null;
+    }
+    //
+    @Override
+    public void mostrar_datos() {
+        super.mostrar_datos();
+    }
 }
