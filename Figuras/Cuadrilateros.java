@@ -30,7 +30,6 @@ public class Cuadrilateros extends DosD {
         super.mostrar_Datos();
         System.out.println("Lado A = " + ladoA);
         System.out.println("Lado B = " + ladoB);
-        System.out.println("Área = " + calcularArea());
-        System.out.println("Perímetro = " + calcularPerimetro());
+
     }
 }

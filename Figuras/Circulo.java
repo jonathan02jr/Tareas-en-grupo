@@ -27,7 +27,5 @@ public class Circulo extends Otros {
     public void mostrar_Datos() {
         super.mostrar_Datos();
         System.out.println("Radio = " + radio);
-        System.out.println("Área = " + calcularArea());
-        System.out.println("Perímetro = " + calcularPerimetro());
     }
 }

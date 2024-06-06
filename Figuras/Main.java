@@ -26,18 +26,18 @@ public class Main {
                 cuadrilatero.calcularArea();
                 cuadrilatero.calcularPerimetro();
                 cuadrilatero.mostrar_Datos();
-                System.out.println("Esta figura es regular");
                 break;
             case 2: // Triángulo
-                System.out.println("Ingrese la base del triángulo:");
+                System.out.println("Ingrese la base (Lado A) del triángulo:");
                 ladoA = scanner.nextDouble();
-                System.out.println("Ingrese la altura del triángulo:");
+                System.out.println("Ingrese la altura (Lado B)del triángulo:");
                 ladoB = scanner.nextDouble();
-                Triangulos triangulo = new Triangulos(ladoA, ladoB);
+                System.out.println("Ingrese el lado (C) del triángulo:");
+                double ladoC = scanner.nextDouble();
+                Triangulos triangulo = new Triangulos(ladoA, ladoB,ladoC);
                 triangulo.calcularArea();
                 triangulo.calcularPerimetro();
                 triangulo.mostrar_Datos();
-                System.out.println("Esta figura es regular");
                 break;
             case 3:
                 System.out.println("Ingrese el número de caras del cubo:");
@@ -71,7 +71,6 @@ public class Main {
                         circulo.calcularArea();
                         circulo.calcularPerimetro();
                         circulo.mostrar_Datos();
-                        System.out.println("Esta figura es regular");
                         break;
                     default:
                         System.out.println("Opción no válida");
