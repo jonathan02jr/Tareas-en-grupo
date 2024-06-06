@@ -1,3 +1,5 @@
+package Taller_Github;
+
 //Evelyn Guachamin
 public class Genealogia {
     public String parentesco;
