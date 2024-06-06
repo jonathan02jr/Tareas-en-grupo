@@ -1,4 +1,4 @@
-package Tarea__Semana6;
+package Figuras;
 //Evelyn
 public class Main {
     public static void main(String[] args){

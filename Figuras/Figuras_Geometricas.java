@@ -1,4 +1,4 @@
-package Tarea__Semana6;
+package Figuras;
 
 //hola
 public class Figuras_Geometricas {
