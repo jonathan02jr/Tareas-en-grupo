@@ -12,7 +12,8 @@ public class Main {
         System.out.println("Seleccione la figura:");
         System.out.println("1. Cuadrilátero");
         System.out.println("2. Triángulo");
-        System.out.println("3. Otro");
+        System.out.println("3. Cubo");
+        System.out.println("4. Otro");
         int opcion = scanner.nextInt();
 
         switch (opcion) {
@@ -25,18 +26,29 @@ public class Main {
                 cuadrilatero.calcularArea();
                 cuadrilatero.calcularPerimetro();
                 cuadrilatero.mostrar_Datos();
+                System.out.println("Esta figura es regular");
                 break;
             case 2: // Triángulo
-                System.out.println("Ingrese el lado A del triángulo:");
+                System.out.println("Ingrese la base del triángulo:");
                 ladoA = scanner.nextDouble();
-                System.out.println("Ingrese el lado B del triángulo:");
+                System.out.println("Ingrese la altura del triángulo:");
                 ladoB = scanner.nextDouble();
                 Triangulos triangulo = new Triangulos(ladoA, ladoB);
                 triangulo.calcularArea();
                 triangulo.calcularPerimetro();
                 triangulo.mostrar_Datos();
+                System.out.println("Esta figura es regular");
                 break;
-            case 3: // Otro
+            case 3:
+                System.out.println("Ingrese el número de caras del cubo:");
+                int nCaras = scanner.nextInt();
+                System.out.println("Ingrese la longitud de la arista del cubo:");
+                double arista = scanner.nextDouble();
+                TresD cubo = new TresD(6, "Cubo", nCaras, arista);
+                double volumenCubo = cubo.calcular_volumen(cubo.nCaras, cubo.arista);
+                System.out.println("Esta figura es en 3D");
+                break;
+            case 4: // Otro
                 System.out.println("Seleccione el tipo de figura:");
                 System.out.println("1. N Lados");
                 System.out.println("2. Círculo");
@@ -59,6 +71,7 @@ public class Main {
                         circulo.calcularArea();
                         circulo.calcularPerimetro();
                         circulo.mostrar_Datos();
+                        System.out.println("Esta figura es regular");
                         break;
                     default:
                         System.out.println("Opción no válida");

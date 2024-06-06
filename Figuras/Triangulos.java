@@ -21,7 +21,6 @@ public class Triangulos extends Regulares {
 
     @Override
     public double calcularPerimetro() {
-        // Asumimos triángulo equilátero para simplicidad
         perimetro = 3 * ladoA;
         return perimetro;
     }
@@ -29,8 +28,8 @@ public class Triangulos extends Regulares {
     @Override
     public void mostrar_Datos() {
         super.mostrar_Datos();
-        System.out.println("Lado A = " + ladoA);
-        System.out.println("Lado B = " + ladoB);
+        System.out.println("Base = " + ladoA);
+        System.out.println("Altura = " + ladoB);
         System.out.println("Área = " + calcularArea());
         System.out.println("Perímetro = " + calcularPerimetro());
     }
