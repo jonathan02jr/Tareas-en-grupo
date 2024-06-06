@@ -18,27 +18,30 @@ public class Genealogia {
     }
 }
 //Jonathan Ramirez
-class Linaje_1 extends Genealogia{
+class Linaje_1 extends Genealogia {
 
     public int cedula;
     public String nombre;
     public String apellido;
 
-    public Linaje_1 ( String parentesco, String fecha_nac,int cedula, int telefono,String nombre, String apellido ){
-        super(parentesco,fecha_nac,telefono);
-        this.cedula=cedula;
-        this.nombre=nombre;
-        this.apellido=apellido;
+    public Linaje_1(String parentesco, String fecha_nac, int cedula, int telefono, String nombre, String apellido) {
+        super(parentesco, fecha_nac, telefono);
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.apellido = apellido;
 
     }
-    public void informacion_completa(){
+
+    public void informacion_completa() {
         System.out.println("La informacion completa es: ");
-        System.out.println("La cedula es: "+cedula);
-        System.out.println("El nombre es: "+nombre);
-        System.out.println("El apellido es: "+apellido);
+        System.out.println("La cedula es: " + cedula);
+        System.out.println("El nombre es: " + nombre);
+        System.out.println("El apellido es: " + apellido);
         super.imprimir_datos();
-    //Ariel Ashqui
-        class Linaje2 extends Linaje_1{
+    }
+}
+//Ariel Ashqui
+class Linaje2 extends Linaje_1{
 
     public int edad;
     public String direccion;
