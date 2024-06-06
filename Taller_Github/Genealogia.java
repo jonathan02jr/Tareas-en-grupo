@@ -60,5 +60,3 @@ class Linaje2 extends Linaje_1{
         System.out.println("La direcccion es: "+direccion);
     }
 }
-    }
-}
