@@ -2,6 +2,7 @@ package Figuras;
 
 import java.util.Scanner;
 //Ariel Ashqui-Jonathan Ramirez - Evelyn Guachamin
+//Tarea Conjunta
 public class Main {
     public static void main(String[] args) {
 
