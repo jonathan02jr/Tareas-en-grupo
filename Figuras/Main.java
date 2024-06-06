@@ -1,9 +1,10 @@
 package Figuras;
-//Evelyn
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         // Menú
@@ -19,24 +20,20 @@ public class Main {
                 double ladoA = scanner.nextDouble();
                 System.out.println("Ingrese el lado B del cuadrilátero:");
                 double ladoB = scanner.nextDouble();
-                Cuadrilateros cuadrilatero = new Cuadrilateros();
-                cuadrilatero.ladoA = ladoA;
-                cuadrilatero.ladoB = ladoB;
-                cuadrilatero.area = cuadrilatero.calcularArea();
-                cuadrilatero.perimetro = cuadrilatero.calcularPerimetro();
-                cuadrilatero.mostrarDatos();
+                Cuadrilateros cuadrilatero = new Cuadrilateros(ladoA, ladoB);
+                cuadrilatero.calcularArea();
+                cuadrilatero.calcularPerimetro();
+                cuadrilatero.mostrar_Datos();
                 break;
             case 2: // Triángulo
                 System.out.println("Ingrese el lado A del triángulo:");
                 ladoA = scanner.nextDouble();
                 System.out.println("Ingrese el lado B del triángulo:");
                 ladoB = scanner.nextDouble();
-                Triangulos triangulo = new Triangulos();
-                triangulo.ladoA = ladoA;
-                triangulo.ladoB = ladoB;
-                triangulo.area = triangulo.calcularArea();
-                triangulo.perimetro = triangulo.calcularPerimetro();
-                triangulo.mostrarDatos();
+                Triangulos triangulo = new Triangulos(ladoA, ladoB);
+                triangulo.calcularArea();
+                triangulo.calcularPerimetro();
+                triangulo.mostrar_Datos();
                 break;
             case 3: // Otro
                 System.out.println("Seleccione el tipo de figura:");
@@ -50,17 +47,17 @@ public class Main {
                         System.out.println("Ingrese la longitud de cada lado del polígono:");
                         double longitudLado = scanner.nextDouble();
                         NLados poligono = new NLados(cantidadLados, longitudLado);
-                        poligono.area = poligono.calcularArea();
-                        poligono.perimetro = poligono.calcularPerimetro();
-                        poligono.mostrarDatos();
+                        poligono.calcularArea();
+                        poligono.calcularPerimetro();
+                        poligono.mostrar_Datos();
                         break;
                     case 2: // Círculo
                         System.out.println("Ingrese el radio del círculo:");
                         double radio = scanner.nextDouble();
                         Circulo circulo = new Circulo(radio);
-                        circulo.area = circulo.calcularArea();
-                        circulo.perimetro = circulo.calcularPerimetro();
-                        circulo.mostrarDatos();
+                        circulo.calcularArea();
+                        circulo.calcularPerimetro();
+                        circulo.mostrar_Datos();
                         break;
                     default:
                         System.out.println("Opción no válida");

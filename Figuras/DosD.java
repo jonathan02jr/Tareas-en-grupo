@@ -1,6 +1,6 @@
 package Figuras;
 
-public class DosD extends Figuras_Geometricas {
+public class DosD extends FigurasGeometricas {
     public double area;
     public double perimetro;
 
@@ -20,8 +20,8 @@ public class DosD extends Figuras_Geometricas {
     }
 
     @Override
-    public void mostrarDatos() {
-        super.mostrarDatos();
+    public void mostrar_Datos() {
+        super.mostrar_Datos();
         System.out.println("Área: " + area);
         System.out.println("Perímetro: " + perimetro);
     }

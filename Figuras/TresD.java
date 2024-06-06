@@ -1,6 +1,6 @@
 package Figuras;
 
-class TresD extends Figuras_Geometricas{
+class TresD extends FigurasGeometricas{
     public int nCaras;
     public double arista;
 
@@ -12,7 +12,7 @@ class TresD extends Figuras_Geometricas{
     }
 
     public double calcular_volumen(int nCaras, double arista){
-        super.mostrar_datos();
+        super.mostrar_Datos();
         System.out.println("N° de caras: "+nCaras);
         System.out.println("Logitud de arista: "+arista);
 

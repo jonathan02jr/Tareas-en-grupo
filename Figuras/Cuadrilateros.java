@@ -1,34 +1,33 @@
 package Figuras;
 
-public class Triangulos extends Regulares {
+public class Cuadrilateros extends DosD {
     public double ladoA;
     public double ladoB;
 
-    public Triangulos() {
+    public Cuadrilateros() {
     }
 
-    public Triangulos(double ladoA, double ladoB) {
-        super(3, "Triángulo");
+    public Cuadrilateros(double ladoA, double ladoB) {
+        super(4, "Cuadrilátero");
         this.ladoA = ladoA;
         this.ladoB = ladoB;
     }
 
     @Override
     public double calcularArea() {
-        area = (ladoA * ladoB) / 2;
+        area = ladoA * ladoB;
         return area;
     }
 
     @Override
     public double calcularPerimetro() {
-        // Asumimos triángulo equilátero para simplicidad
-        perimetro = 3 * ladoA;
+        perimetro = 2 * (ladoA + ladoB);
         return perimetro;
     }
 
     @Override
-    public void mostrarDatos() {
-        super.mostrarDatos();
+    public void mostrar_Datos() {
+        super.mostrar_Datos();
         System.out.println("Lado A = " + ladoA);
         System.out.println("Lado B = " + ladoB);
         System.out.println("Área = " + calcularArea());
