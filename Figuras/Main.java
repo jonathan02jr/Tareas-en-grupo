@@ -9,6 +9,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true){
+            System.out.println("Figuras Geometricas");
             System.out.println("1. Figura 2D");
             System.out.println("2. Figura 3D");
             System.out.println("3. Salir");

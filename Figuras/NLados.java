@@ -27,7 +27,5 @@ public class NLados extends Otros {
     public void mostrar_Datos() {
         super.mostrar_Datos();
         System.out.println("Longitud del lado = " + longitudLado);
-        System.out.println("Área = " + calcularArea());
-        System.out.println("Perímetro = " + calcularPerimetro());
     }
 }
