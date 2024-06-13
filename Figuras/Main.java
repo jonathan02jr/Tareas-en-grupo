@@ -35,6 +35,7 @@ public class Main {
                             cuadrilatero.calcularArea();
                             cuadrilatero.calcularPerimetro();
                             cuadrilatero.mostrar_Datos();
+                            System.out.print("\n");
                             break;
                         case 2: // Triángulo
                             System.out.println("Ingrese la base (Lado A) del triángulo:");
@@ -47,10 +48,11 @@ public class Main {
                             triangulo.calcularArea();
                             triangulo.calcularPerimetro();
                             triangulo.mostrar_Datos();
+                            System.out.print("\n");
                             break;
                         case 3: // Otro
                             System.out.println("Seleccione el tipo de figura:");
-                            System.out.println("1. N Lados");
+                            System.out.println("1. N Lados Poligono");
                             System.out.println("2. Círculo");
                             int subopcion = scanner.nextInt();
                             switch (subopcion) {
@@ -63,6 +65,7 @@ public class Main {
                                     poligono.calcularArea();
                                     poligono.calcularPerimetro();
                                     poligono.mostrar_Datos();
+                                    System.out.print("\n");
                                     break;
                                 case 2: // Círculo
                                     System.out.println("Ingrese el radio del círculo:");
@@ -71,6 +74,7 @@ public class Main {
                                     circulo.calcularArea();
                                     circulo.calcularPerimetro();
                                     circulo.mostrar_Datos();
+                                    System.out.print("\n");
                                     break;
                                 default:
                                     System.out.println("Opción no válida");
