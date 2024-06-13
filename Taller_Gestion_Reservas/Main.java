@@ -5,15 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Bienvenidos al menú de Reservas");
 
-        System.out.println("Selecciona tu tipo de evento a reservar:");
-        System.out.println("1.- Boda:");
-        System.out.println("2.- Conferencia:");
-        System.out.println("3.- Concierto:");
-        System.out.println("4.- Salir:");
-        Reserva persona1 =new Reserva();
-        persona1.calcularCosto(200,1000);
-
+        Boda boda1 = new Boda(123454,"Ariel","ariel16@gmail.com","14/06/2024","Boda",1000);
+        boda1.calcularCosto(300,1000);
+        boda1.mostrarDatos();
     }
 }

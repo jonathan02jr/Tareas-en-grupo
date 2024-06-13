@@ -5,7 +5,8 @@ class Evento extends Reserva{
 
     public Evento(){}
 
-    public Evento(String tipoEvento,double costoEvento){
+    public Evento(int idCliente, String nomCliente, String emailCliente, String fechaCliente,String tipoEvento,double costoEvento){
+        super(idCliente, nomCliente, emailCliente, fechaCliente);
         this.tipoEvento=tipoEvento;
         this.costoEvento=costoEvento;
     }
