@@ -6,6 +6,9 @@ public class Main {
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
         int opcion2;
+        System.out.println("-----BIENVENIDO AL PROGRAMA PARA RESERVAS---------");
+        System.out.println("********************************************************");
+        System.out.println("Por favor escoja el tipo de reserva que desea realizar: ");
         System.out.println("1. Conferencia");
         System.out.println("2. Boda");
         System.out.println("3. Concierto");
@@ -18,8 +21,8 @@ public class Main {
                 System.out.println("---CONFERENCIA---");
                 System.out.println("El valor base es de: "+conferencia1.getCostoEvento());
                 System.out.println("---- SERVICIOS ADICIONALES ----");
-                System.out.println("1. Servicios de Catering- $"+conferencia1.getValorSeguridad());
-                System.out.println("2. Equipo audiovisual $"+conferencia1.getValorComida());
+                System.out.println("1. Servicios de Catering- $"+conferencia1.getValorServicioCatering());
+                System.out.println("2. Equipo audiovisual $"+conferencia1.getValorEquipoAudiovisual());
                 System.out.println("3. Los dos servicios - $300");
                 System.out.println("4. No desea ningun servicio / Salir");
                 System.out.print("Ingrese una opcion: ");
@@ -51,8 +54,8 @@ public class Main {
                 System.out.println("---BODA---");
                 System.out.println("El valor base es de: "+boda1.getCostoEvento());
                 System.out.println("---- SERVICIOS ADICIONALES ----");
-                System.out.println("1. Decoración floral $"+boda1.getValorSeguridad());
-                System.out.println("2. Música en vivo $"+boda1.getValorComida());
+                System.out.println("1. Decoración floral $"+boda1.getValorDecoracionFloral());
+                System.out.println("2. Música en vivo $"+boda1.getValorMusicaEnVivo());
                 System.out.println("3. Los dos servicios - $800");
                 System.out.println("4. No desea ningun servicio / Salir");
                 System.out.print("Ingrese una opcion: ");
@@ -78,7 +81,6 @@ public class Main {
                         System.out.println("Ingrese valores del 1 al 4");
                         break;
                 }
-                break;
                 break;
             case 3:
                 Concierto evento1 = new Concierto(12345,"Josue","josue@gmail.com","26 de julio","Concierto",1000,400,150);
