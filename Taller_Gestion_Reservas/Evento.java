@@ -26,11 +26,13 @@ class Evento extends Reserva{
     public void setCostoEvento(double costoEvento) {
         this.costoEvento = costoEvento;
     }
+
     public void mostrarDatos(){
         super.mostrarDatos();
         System.out.println("Tipo de Evento: "+tipoEvento);
     }
-    public void servicios( ) {
+    public void servicios( )
+    {
         System.out.println("El valor total de los servicios es: "+costoEvento);
     }
 }

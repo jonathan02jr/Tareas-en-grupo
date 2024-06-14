@@ -6,10 +6,6 @@ public class Main {
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
 
-        Boda boda1 = new Boda(123454,"Ariel","ariel16@gmail.com","14/06/2024","Boda",1000);
-        boda1.calcularCosto(300,1000);
-        boda1.mostrarDatos();
-
 
         System.out.println("1. Conferencia");
         System.out.println("2. Boda");
@@ -37,19 +33,20 @@ public class Main {
                 int opcion2= sc.nextInt();
                 switch (opcion2){
                     case 1:
-                        double suma1 = evento1.getCostoEvento()+ evento1.getValorSeguridad();
-                        System.out.println("Valor total: "+suma1);
+                        System.out.println("---------------------------------------- ");
+                        evento1.calcularCosto(1);
                         break;
                     case 2:
-                        double suma2 = evento1.getCostoEvento()+ evento1.getValorComida();
-                        System.out.println("Valor total: "+suma2);
+                        System.out.println("---------------------------------------- ");
+                        evento1.calcularCosto(2);
                         break;
                     case 3:
-                        double suma3 = evento1.getCostoEvento() + 550;
-                        System.out.println("Valor total: "+ suma3);
+                        System.out.println("---------------------------------------- ");
+                        evento1.calcularCosto(3);
                         break;
                     case 4:
-                        System.out.println("Saliendo....");
+                        System.out.println("---------------------------------------- ");
+                        evento1.mostrarDatos();
                         return;
                     default:
                         System.out.println("Ingrese valores del 1 al 4");

@@ -8,10 +8,10 @@ class Boda extends Evento {
         super(idCliente, nomCliente, emailCliente, fechaCliente, tipoEvento, costoEvento);
 
     }
-    @Override
+    /*@Override
     public double calcularCosto(double servicios, double evento) {
         return super.calcularCosto(servicios, evento);
-    }
+    }*/
 
     @Override
     public void mostrarDatos() {

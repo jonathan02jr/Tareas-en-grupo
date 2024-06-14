@@ -48,15 +48,12 @@ public class Reserva {
     }
     public void mostrarDatos(){
         System.out.println("Datos de la reserva: ");
-        System.out.println("Número de cédula "+idCliente);
-        System.out.println("Nombre: "+nomCliente);
-        System.out.println("Email: "+emailCliente);
-        System.out.println("Fecha de la reserva: "+fechaCliente);
+        System.out.println("Número de cédula "+getIdCliente());
+        System.out.println("Nombre: "+getNomCliente());
+        System.out.println("Email: "+getEmailCliente());
+        System.out.println("Fecha de la reserva: "+getFechaCliente());
     }
-    public double calcularCosto(double servicios, double evento){
-        double total;
-        total = servicios+evento;
-        System.out.println("Total: "+total);
-        return total;
+    public double calcularCosto( double suma){
+        return suma;
     }
 }
