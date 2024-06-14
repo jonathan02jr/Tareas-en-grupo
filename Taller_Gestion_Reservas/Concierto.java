@@ -3,7 +3,7 @@ package Taller_Gestion_Reservas;
 class Concierto extends Evento{
     private double valorSeguridad;
     private double valorComida;
-    public double suma1;
+    public double sumaConcierto;
 
 
     public Concierto(int idCliente, String nomCliente,
@@ -31,21 +31,21 @@ class Concierto extends Evento{
     {
 
         if (opcion==1) {
-            suma1 = getCostoEvento() + getValorSeguridad();
+            sumaConcierto = getCostoEvento() + getValorSeguridad();
             super.mostrarDatos();
-            System.out.println("Valor total: " + suma1);
+            System.out.println("Valor total: " + sumaConcierto);
 
         } else if (opcion==2) {
-            suma1 = getCostoEvento() + getValorComida();
+            sumaConcierto = getCostoEvento() + getValorComida();
             super.mostrarDatos();
-            System.out.println("Valor total: " + suma1);
+            System.out.println("Valor total: " + sumaConcierto);
 
         } else if (opcion==3) {
-            suma1 = getCostoEvento() + 550;
+            sumaConcierto = getCostoEvento() + 550;
             super.mostrarDatos();
-            System.out.println("Valor total: " + suma1);
+            System.out.println("Valor total: " + sumaConcierto);
         }
-        return suma1;
+        return sumaConcierto;
     }
 
 }
