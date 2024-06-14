@@ -31,8 +31,5 @@ class Evento extends Reserva{
         super.mostrarDatos();
         System.out.println("Tipo de Evento: "+tipoEvento);
     }
-    public void servicios( )
-    {
-        System.out.println("El valor total de los servicios es: "+costoEvento);
-    }
+
 }
